@@ -6,6 +6,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -25,8 +27,9 @@
         <a class="navbar-brand text-muted" href="#">Roberts Window Tint</a>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Res/Commercial</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="commercial.html">Commercial</a></li>
+            <li><a href="residential.html">Residential</a></li>
             <li class="dropdown">
               <a data-toggle="dropdown" data-target="#">Automotive<b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -42,6 +45,7 @@
       </div>
     </div><!-- End navbar -->
 
+
     <!-- Carousel -->
     <div id="myCarousel" class="carousel slide jumbotron">
       <div class="container">
@@ -55,7 +59,7 @@
             <h1>Locally Owned &amp; Operated Since 1995</h1>
             <p class="lead">Welcome to Roberts Window Tint.  We have over 100 years of combined window tinting experience.  All of our work comes backed with a lifetime warranty.  We use Madico film that's made right here in America.  We appreciate your business.</p>
             <p class="btn-group">
-              <a class="btn btn-success btn-lg" href="#">Email Me a Price</a>
+              <a class="btn btn-success btn-lg hidden-xs" data-toggle="modal" href="#textModalE">Email Me a Price</a>
               <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal">Text me a price</a>
             </p>
           </div>
@@ -79,7 +83,43 @@
       </a>
     </div> <!-- End Carousel -->
 
-    <!-- Modal -->
+    <!-- Email model -->
+    <div class="modal fade" id="textModalE">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">We'll email You a Price!</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="mobilePhone">Your Email</label>
+                <input type="email" class="form-control" id="mobilePhone" placeholder="Your Email!">
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Sedan</option>
+                  <option>Coupe</option>
+                  <option>Truck</option>
+                  <option>SUV</option>
+                  <option>Front Doors Only</option>
+                  <option>Windshiled Visor</option>
+                  <option>Windshield Complete </option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me Quote</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Text Modal -->
     <div class="modal fade" id="textModal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -143,25 +183,69 @@
         <p>Glare causes eye fatigue and lower productivity. Drawing curtains or closing blinds is a claustrophobic approach at best, and it drives up the bill for artificial lighting. Madico films let in the light but not the glare, helping to maintain an “open” feeling.</p>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>Location</h3>
-            <p>11704 Shelbyville Road. Louisville, KY 40243</p>
-      </div>
-      <div class="col-sm-6">
-        <h3>Contact</h3>
-          <p>Phone: (502)-245-9293  Email: robertswindowtint@gmail.com</p>
-          <a href="#" class="btn btn-success btn-md">Sign up for Newsletter</a>
-      </div>
-      </div><!-- End main content-->
-
-      <hr>
-      <div class="pull-right">
-        <p>&copy; 2017 Roberts Window Tint - By Robin W. Moore</p>
-      </div>
     </div>
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <footer class="footer-distributed">
+
+   <div class="footer-left">
+
+     <h3>Company<span>logo</span></h3>
+
+     <p class="footer-links">
+       <a href="#">Home</a>
+       ·
+       <a href="#">Blog</a>
+       ·
+       <a href="#">Pricing</a>
+       ·
+       <a href="#">About</a>
+       ·
+       <a href="#">Faq</a>
+       ·
+       <a href="#">Contact</a>
+     </p>
+
+     <p class="footer-company-name">Company Name &copy; 2015</p>
+   </div>
+
+   <div class="footer-center">
+
+     <div>
+       <i class="fa fa-map-marker"></i>
+       <p><span>21 Revolution Street</span> Paris, France</p>
+     </div>
+
+     <div>
+       <i class="fa fa-phone"></i>
+       <p>+1 555 123456</p>
+     </div>
+
+     <div>
+       <i class="fa fa-envelope"></i>
+       <p><a href="mailto:support@company.com">support@company.com</a></p>
+     </div>
+
+   </div>
+
+   <div class="footer-right">
+
+     <p class="footer-company-about">
+       <span>About the company</span>
+       Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+     </p>
+
+     <div class="footer-icons">
+
+       <a href="#"><i class="fa fa-facebook"></i></a>
+       <a href="#"><i class="fa fa-twitter"></i></a>
+       <a href="#"><i class="fa fa-linkedin"></i></a>
+       <a href="#"><i class="fa fa-github"></i></a>
+
+     </div>
+
+   </div>
+
+ </footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
