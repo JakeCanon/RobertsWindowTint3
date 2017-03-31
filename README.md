@@ -1,32 +1,36 @@
-<!-- README.md -->
+#Project Title:
 
-<!-- Front End Web Development Class Project for Code Louisville 2017 -->
+=======**** Roberts Window Tint ****=======
 
-<!-- Project was my attempts to redo a website for Roberts Window Tint -->
+#project description:
 
-<!-- Using html, CSS, and JavaScript -->
+Roberts Window Tint is a front-end project that was built using HTML, CSS, JavaScript, and Bootstrap. This web site is my attempt to update the current website which is not responsive.
 
-<!-- Thank you to all the mentors and classmates who helped me along the way -->
+#Getting Started:
 
-<!-- Special thanks to Oualid Jniyah for your help and time. -->
-
-
+This is a front-end project, therefore all you need is an up to date browser. The website is hosted on https://jakecanon.github.io/RobertsWindowTint3/
 
 
+#Prerequisites:
 
+No Prerequisites
 
+#Built With:
 
+=====***** HTML - CSS - Javascript - jquery - Bootstrap
 
+#Versioning:
 
+For the versions available, see the tags on this repository.
 
+#Developers:
 
+Robin Moore
 
+#License:
 
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
+#Acknowledgments:
 
-
-
-
-
-
-https://jakecanon.github.io/RobertsWindowTint3/
+Thanks to Wally Jniyah for all your help and guidance. 
